@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dummyfrag_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/view"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--รายละเอียด-->
+            <LinearLayout
+                android:id="@+id/view_detail"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รายละเอียด"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex1" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"></FrameLayout>
+            <!--การ-->
+            <LinearLayout
+                android:id="@+id/view_detailohter"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="การเดินทาง"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex2" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_detailohter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--ที่อยู่-->
+            <LinearLayout
+                android:id="@+id/view_address"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ที่อยู่"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex3" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--เวลาทำการ-->
+            <LinearLayout
+                android:id="@+id/view_time"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เวลาทำการ"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex4" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--ราคา-->
+            <LinearLayout
+                android:id="@+id/view_price"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ราคา"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex5" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--เบอร์โทร-->
+            <LinearLayout
+                android:id="@+id/view_phone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เบอร์โทร"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex6" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+            <!--เว็บไซต์-->
+            <LinearLayout
+                android:id="@+id/view_web"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="เว็บไซต์"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_expand_more_white_48dp"
+                    android:id="@+id/img_ex7" />
+            </LinearLayout>
+            <at.blogc.android.views.ExpandableTextView
+                android:id="@+id/ex_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:maxLines="0"
+                android:ellipsize="end"
+                app:animation_duration="750"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

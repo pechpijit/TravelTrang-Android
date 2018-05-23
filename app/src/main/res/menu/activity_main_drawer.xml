@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="หน้าหลัก" />
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@drawable/ic_terrain_white_24dp"
+            android:title="สถานที่" />
+        <item
+            android:id="@+id/nav_create"
+            android:icon="@drawable/ic_create_white_24dp"
+            android:title="สร้างทริป" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_white_24dp"
+            android:title="แผนที่" />
+        <item
+            android:id="@+id/nav_follow"
+            android:icon="@drawable/ic_favorite_white_24dp"
+            android:title="รายการที่ชื่นชอบ" />
+        <item
+        android:id="@+id/nav_diary"
+        android:icon="@drawable/ic_book_white_24dp"
+        android:title="ไดอารี่" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_cancel_white_24dp"
+            android:title="ออกจากระบบ" />
+    </group>
+
+</menu>

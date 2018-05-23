@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1051471325445",
+    "firebase_url": "https://travel-tang.firebaseio.com",
+    "project_id": "travel-tang",
+    "storage_bucket": "travel-tang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051471325445:android:ac66b7f05652fbc8",
+        "android_client_info": {
+          "package_name": "com.khiancode.traveltrang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051471325445-hu2ej8cvkujc0s93p3nnauad9gui0t7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGHrdZ5AlwBkvFEZTchQyUiBddfH-i4Ms"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
